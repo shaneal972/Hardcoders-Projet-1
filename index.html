@@ -7,6 +7,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Pattaya&family=Rock+Salt&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
@@ -17,17 +23,18 @@
           href="#"
           class="button button-id"
           title="Bouton permettant de s'identifier"
-          >S'identifier</a
         >
+          S'identifier
+        </a>
       </header>
       <main>
         <div class="jumbotron">
           <div class="logo">Dav'Pizzas</div>
-          <p>Les meilleures pizzas près de chez vous</p>
-          <p>Nouvelles tailles</p>
+          <p class="slogan">Les meilleures pizzas près de chez vous</p>
+          <p>Nouvelles <span>tailles</span></p>
           <article>
-            <div class="moy-pizzas">
-              <div class="price">9,99€</div>
+            <div class="nos-pizzas moy-pizzas">
+              <div class="price">9,99 €</div>
               <p>Lorem ipsum dolor sit amet.</p>
               <a
                 href="#"
@@ -36,9 +43,9 @@
                 >Acheter</a
               >
             </div>
-            <div class="large-pizzas">
-              <div class="price">15,99€</div>
-              <p>Lorem ipsum dolor sit amet.</p>
+            <div class="nos-pizzas large-pizzas">
+              <div class="price">15,99 €</div>
+              <p>Lorem<span class="star">*</span> ipsum dolor sit amet.</p>
               <a
                 href="#"
                 class="button button-buy"
@@ -47,17 +54,24 @@
               >
             </div>
           </article>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla vero
-            unde saepe fuga rem. Distinctio.
+          <p class="engage">
+            <span class="star">*</span>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Nulla vero unde saepe fuga rem. Distinctio.
           </p>
         </div>
-        <a href="#details">Descendre</a>
-        <section>
-          <article>
-            <img src="" alt="Le plat du jour" />
-            <div>
-              <h2>Lorem, ipsum dolor.</h2>
+        <a
+          href="#details"
+          class="descendre"
+          alt="flêche dirigée vers le bas"
+          title="Pemret de faire descendre l'écran"
+        >
+          <i class="fas fa-chevron-down"></i>
+        </a>
+        <section id="details">
+          <article class="plateofday">
+            <img src="images/plat-du-jour.jpg" alt="Le plat du jour" />
+            <div class="details-plat">
+              <h2>Notre plat du jour</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Delectus, atque tenetur! Amet architecto consectetur qui,
@@ -65,37 +79,35 @@
               </p>
             </div>
           </article>
-          <article>
+          <article class="best-pizzas">
             <div>
-              <div>
-                <h1>
+              <h1>
+                Lorem ipsum dolor sit amet.
+              </h1>
+              <ul>
+                <li>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h1>
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus, molestias.
-                  </li>
-                  <li>
-                    Eos veritatis natus distinctio harum blanditiis, ullam
-                    numquam unde necessitatibus?
-                  </li>
-                  <li>
-                    Error sapiente id cupiditate recusandae laborum ea inventore
-                    itaque nulla?
-                  </li>
-                  <li>
-                    Praesentium quos ad, ullam voluptas non nemo suscipit sint
-                    consequuntur!
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Hic, harum!
-                  </li>
-                </ul>
-              </div>
-              <img src="" alt="Nos meilleurs plats" />
+                  Delectus, molestias.
+                </li>
+                <li>
+                  Eos veritatis natus distinctio harum blanditiis, ullam numquam
+                  unde necessitatibus?
+                </li>
+                <li>
+                  Error sapiente id cupiditate recusandae laborum ea inventore
+                  itaque nulla?
+                </li>
+                <li>
+                  Praesentium quos ad, ullam voluptas non nemo suscipit sint
+                  consequuntur!
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  harum!
+                </li>
+              </ul>
             </div>
+            <img src="" alt="Nos meilleurs plats" />
           </article>
         </section>
         <section class="nos-realisations">
