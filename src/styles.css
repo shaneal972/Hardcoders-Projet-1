@@ -172,6 +172,27 @@ header {
   margin-bottom: 25px;
 }
 
-.best-pizzas ul {
+.best-pizzas > div {
+  margin-bottom: 55px;
+}
+
+.best-pizzas ul li {
   list-style-type: disc;
+}
+
+/* section - nos-realisations */
+.nos-realisations {
+  margin-top: 60px;
+}
+
+.nos-realisations__populaires h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.nos-realisations__populaires p {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
 }
