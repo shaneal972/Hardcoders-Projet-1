@@ -176,6 +176,10 @@ header {
   margin-bottom: 55px;
 }
 
+.best-pizzas ul {
+  padding-left: 10px;
+}
+
 .best-pizzas ul li {
   list-style-type: disc;
 }
@@ -183,16 +187,71 @@ header {
 /* section - nos-realisations */
 .nos-realisations {
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nos-realisations__populaires h2,
+.nos-realisations__populaires p {
+  text-align: center;
 }
 
 .nos-realisations__populaires h2 {
   font-size: 1.2rem;
-  text-align: center;
   margin-bottom: 15px;
 }
 
 .nos-realisations__populaires p {
   font-size: 1rem;
-  text-align: center;
   margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.nos-realisations__populaires-item {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.nos-realisations__populaires-item img {
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.button-cmd {
+  width: 60%;
+  background-color: #3a8df4;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 70px;
+}
+
+/* section - responsive */
+.responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.responsive h2,
+.fas {
+  margin-bottom: 30px;
+}
+
+.responsive__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.responsive__item-elt {
+  text-align: center;
+}
+
+.responsive__item-elt .fas {
+  font-size: 5rem;
 }
